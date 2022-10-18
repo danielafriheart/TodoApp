@@ -1,2 +1,51 @@
-<p>home works!</p>
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, adipisci!
+<div class="container-fluid py-4 h-100">
+    <div class="container h-100">
+        <nav class="d-flex justify-content-between align-items-center bg-light p-3 px-4 rounded-pill">
+            <h5>My To-do</h5>
+
+            <div class="search px-2 rounded-pill border flex input-group w-50">
+                <i class="uil uil-search-alt pe-4 input-group-text bg-transparent border-0"></i>
+                <input type="search" placeholder="Search" class="border-0 bg-transparent p-2 form-control">
+            </div>
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary rounded-pill" data-bs-toggle="modal"
+                data-bs-target="#exampleModal">
+                + Add Todo
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Create Todo</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <form action="">
+                                <div class="">
+                                    <label for="Title">Title</label>
+                                    <div class="input-group">
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="d-flex justify-content-between container mt-3 border-bottom">
+            <caption>Created today</caption>
+        </div>
+        <div class="container h-75 mx-auto mt-5 row">
+            <div class="col"></div>
+            <div class="col"></div>
+        </div>
+    </div>
+</div>

@@ -1,1 +1,29 @@
+@import url('http://fonts.cdnfonts.com/css/helvetica-neue-9');
+
 /* You can add global styles to this file, and also import other style files */
+* {
+    outline: 1px solid lightgray;
+    list-style: none;
+    font-family: 'Helvetica 45 Light', sans-serif;
+}
+
+/* a {
+    background-color: #F8F9F9;
+} */
+
+a:hover {
+    background-color: #F2F3F4 !important;
+}
+
+.active {
+    background-color: #F2F3F4 !important;
+    font-weight: bold !important;
+}
+
+.form-control:focus {
+    box-shadow: none !important;
+    outline: none !important;
+}
+caption{
+    font-size: 13px;
+}

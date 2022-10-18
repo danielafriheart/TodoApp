@@ -1,1 +1,23 @@
-<router-outlet></router-outlet>
+<div class="container-fluid row" style="height: 100vh;">
+  <div class="col-md-2 border-end border-5 border-light pt-3">
+    <header class="d-flex">
+      <!-- <i class="uim uim-android-alt"></i> -->
+
+      <h3 class="fw-bold">:) Leest <i class="uil uil-android-alt"></i></h3>
+      
+    </header>
+    <ul class="px-0 pt-3">
+      <li><a class="nav-link p-3 active rounded-start rounded-5" routerLink="/app"><i class="uil uil-create-dashboard pe-2 text-secondary"></i> Home</a></li>
+      <li><a href="" class="nav-link p-3  rounded-start rounded-5"><i class="uil uil-check-circle pe-2 text-secondary"></i> My Task</a></li>
+      <li><a href="" class="nav-link p-3 rounded-start rounded-5"><i class="uil uil-bell pe-2 text-secondary"></i> Inbox</a></li>
+    </ul>
+    <p class="my-4">Reporting</p>
+    <ul class="px-0">
+      <li><a href="" class="nav-link p-3 rounded-start rounded-5"><i class="uil uil-analytics pe-2 text-secondary"></i> Portfolios</a></li>
+      <li><a href="" class="nav-link p-3 rounded-start rounded-5"><i class="uil uil-crosshairs pe-2 text-secondary"></i> Goals</a></li>
+    </ul>
+  </div>
+  <div class="col-md-10">
+    <router-outlet></router-outlet>
+  </div>
+</div>
