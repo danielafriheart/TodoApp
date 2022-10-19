@@ -6,10 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
+  // Created form variables
+  public todoTitle = " ";
+  public todoNote = " ";
 
   constructor() { }
-
-  ngOnInit(): void {
-  }
+  ngOnInit(): void { }
 
 }
