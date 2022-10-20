@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class BudgetComponent implements OnInit {
   // Input variables
   public budgetName = "";
-  public budgetAmount = "";
+  public budgetAmount!: number;
   public budgetNote = "";
   public budgetTarget = "";
 
@@ -23,15 +23,20 @@ export class BudgetComponent implements OnInit {
   }
 
   createBudget() {
-    // alert("Gbemidebe!!")
-    var todoObj = {
-      budgetName: this.budgetName,
-      budegtAmount: this.budgetAmount,
-      budgetNote: this.budgetNote,
-      budgetTarget: this.budgetTarget
+    if (this.budgetName && this.budgetAmount) {
+
+      // alert("Gbemidebe!!")
+      var todoObj = {
+        budgetName: this.budgetName,
+        budgetAmount: this.budgetAmount,
+        budgetNote: this.budgetNote,
+        budgetTarget: this.budgetTarget
+      }
+      this.budgetArray.push(todoObj)
+      console.log(this.budgetArray);
+    } else {
+      alert("Traboski")
     }
-    this.budgetArray.push(todoObj)
-    console.log(this.budgetArray);
 
   }
 

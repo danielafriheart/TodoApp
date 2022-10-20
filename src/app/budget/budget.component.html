@@ -17,11 +17,12 @@
                 <form action="" class="row g-3">
                     <div class="form-group col-12">
                         <label for="budgetTitle form-label">Budget For?</label>
-                        <input type="text" name="budgetName" class="form-control" [(ngModel)]="budgetName" required="">
+                        <input type="text" name="budgetName" class="form-control" [(ngModel)]="budgetName" required>
                     </div>
                     <div class="form-group col-6">
                         <label for="budgetAmount form-label">Amount</label>
-                        <input type="number" name="budgetAmount" class="form-control" [(ngModel)]="budgetAmount" req>
+                        <input type="number" name="budgetAmount" class="form-control" [(ngModel)]="budgetAmount"
+                            required>
                     </div>
                     <div class="form-group col-6">
                         <label for="targetDate form-label">Target</label>
@@ -63,7 +64,7 @@
                 </form>
             </div>
             <!-- Table -->
-            <div class="col-8 border-start px-4">
+            <div class="col-8 border-start border-light border-5 px-4">
                 <table class="w-100 mx-auto table">
                     <thead>
                         <tr>
@@ -74,11 +75,11 @@
                             <th><i class="uil uil-trash-alt text-danger"></i></th>
                         </tr>
                     </thead>
-                    <tbody class="table-striped" *ngFor="">
+                    <tbody class="table-striped" *ngFor="let id=index; let budget of budgetArray;">
                         <tr>
-                            <td>1</td>
-                            <td>{{budgetName}}</td>
-                            <td># {{budgetAmount}} .00</td>
+                            <td>{{id+1}}</td>
+                            <td>{{budget.budgetName}}</td>
+                            <td># {{budget.budgetAmount}} .00</td>
                             <td><button class="btn btn-success btn-sm w-100">Edit</button></td>
                             <td><button class="btn btn-danger btn-sm w-100">Delete</button></td>
                         </tr>
